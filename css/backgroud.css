@@ -1,0 +1,35 @@
+.music_img{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.background {
+    background-image: url(../img/クロノスタシス时停错觉.webp);
+    /* background:url(../qqw.jpg); */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* 将模糊效果应用到整个背景图像 */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* 确保背景在内容下面 */
+}
+
+.content {
+    text-align: center;
+    color: rgb(200, 23, 23);
+    z-index: 1; /* 确保内容在背景上面 */
+}
